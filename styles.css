@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #724c4c;
+  --input-color: rgba(15, 10, 10, 0.5);
+  --todos-bg: #342b61;
+}
+
+body {
+  background: var(--bg-color);
+}
+.container {
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: var(--input-color);
+  max-width: 400px;
+}
+.search {
+  margin-top: 20px;
+}
+.todos li {
+  background: var(--todos-bg);
+}
+.delete {
+  cursor: pointer;
+}
+.fa-check {
+  cursor: pointer;
+}
+.filtered {
+  display: none !important;
+}
+
+div.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.completed {
+  color: #888282;
+  text-decoration: line-through;
+}
